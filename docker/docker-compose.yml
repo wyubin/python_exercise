@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  python_exercise:
+    build:
+      context: ../
+      dockerfile: docker/Dockerfile
+      labels:
+        commit: ${commit:-NA}
+    image: yubin0611/python_exercise:v0.0.1
+    container_name: python_exercise
+    volumes:
+      - /tmp:/tmp
+      - /etc/localtime:/etc/localtime:ro
+    command: tail -F anything
