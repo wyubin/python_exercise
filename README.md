@@ -16,8 +16,7 @@ docker exec -it python_exercise ash
 ## Example
 
 ```sh
-## DB initiate
-python ./shopcart.py --init
-## start...
-python ./shopcart.py --user joe
+## prepare your ans with "ans_" prefix
+## then test by exec python script
+python set/test_ch3_set.py
 ```
