@@ -5,12 +5,18 @@
 	},
 	// Default path to open when attaching to a new container.
 	//"workspaceFolder": "/home/yubin/builds/mygit/ex_ruby",
-	"mounts": [
-		"source=/home/wyubin/.ssh,target=/home/wyubin/.ssh,type=bind,consistency=cached"
-	],
+	"mounts": [],
 	// Set *default* container specific settings.json values on container create.
-	"settings": { },
-	"remoteUser": "wyubin",
-	"extensions": [],
+	"customizations":{
+		"vscode": {
+			"settings": {
+				"python.pythonPath": "/usr/bin/python3"
+			},
+			"extensions": [
+				"ms-python.python",
+				"ms-python.vscode-pylance"
+			]
+		}
+	},
 	"forwardPorts": []
 }
